@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.2.0
+env:
+  - DB=postgresql
+script:
+  - RAILS_ENV=test bundle exec rake db:create db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec/
+before_install:
+  - gem update --system
+  - gem install bundler
+  - gem install rails
+before_script:
+  - psql -c 'create database homepage-blog_test' -U postgres
+bundler_args: --binstubs=./bundler_stubs
