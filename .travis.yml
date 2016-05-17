@@ -12,5 +12,4 @@ before_install:
   - gem install bundler
   - gem install rails
 before_script:
-  - psql -c 'create database homepage-blog_test' -U postgres
-bundler_args: --binstubs=./bundler_stubs
+  - psql -c 'create database homepage_blog_test' -U postgres
