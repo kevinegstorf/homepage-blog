@@ -28,6 +28,7 @@ class PostsController < ApplicationController
       redirect_to @post, notice: 'Yeah It has been updated'
     else
       render 'edit'
+    end
   end
 
   def destroy
