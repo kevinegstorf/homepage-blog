@@ -107,17 +107,21 @@ hr {
 #main_navigation {
   border-bottom: 1px solid $border;
   padding: 2.5em 5%;
-
   .name {
     border: 2px solid $border;
     color: $dark;
     float: left;
-    font-size: .8em;
+    font-size: 2em;
     font-weight: 700;
     letter-spacing: 4px;
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      border: 2px solid $highlight;
+      color: $highlight;
+    }
   }
 
   nav {
@@ -128,7 +132,10 @@ hr {
       text-decoration: none;
       color: $dark;
       margin: 0 1rem;
-      font-size: 1rem;
+      font-size: 2em;
+      &:hover {
+        color: $highlight;
+      }
     }
   }
 }
@@ -157,9 +164,10 @@ hr {
 
     i {
       color: $dark;
+      font-size: 2em;
       margin-left: 1em;
       padding-top: .2em;
-      
+
       &:hover {
         color: $highlight;
       }
