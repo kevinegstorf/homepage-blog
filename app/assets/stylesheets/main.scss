@@ -6,8 +6,9 @@
 $dark: #424652;
 $light: #9a9da4;
 $highlight: #8bd6db;
-$border: #E9E9E9;
-$white: #FFFFFF;
+$border: #e9e9e9;
+$white: #fff;
+
 * {
   box-sizing: border-box;
 }
@@ -16,34 +17,45 @@ $white: #FFFFFF;
 $main-font: 'Titillium Web', sans-serif;
 
 
-html, body {
- font-family: $main-font;
+html,
+body {
+  font-family: $main-font;
 }
 
-.wrapper{
-  width: 90%;
+.wrapper {
   margin: 0 auto;
+  width: 90%;
 }
 
-.wrapper_padding {
+.wrapper-padding {
   padding: 4rem 0;
 }
 
-.skinny_wrapper{
-  width: 80%;
-  max-width: 760px;
+.skinny-wrapper {
   margin: 0 auto;
+  max-width: 760px;
+  width: 80%;
 }
+
 .clearfix:before,
 .clearfix:after{
-  content: " ";
+  content: ' ';
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
 
-h1, h2, h3, h4, h5 , h6, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   color: $dark;
 }
 
@@ -71,70 +83,83 @@ h6 {
   font-size: 1rem;
 }
 
-p, li {
+p,
+li {
   font-size: 1.5rem;
   line-height: 1.75;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin: 0 0 1.6em;
 }
 
 hr {
-  width: 3em;
-  display: block;
-  height: 2px;
   border: 0;
   border-top: 2px solid $highlight;
+  display: block;
+  height: 2px;
   margin: 2rem 0;
+  width: 3em;
 }
+
 #main_navigation {
-  padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  padding: 2.5em 5%;
+
   .name {
-    font-weight: 700;
-    font-size: .8em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
     border: 2px solid $border;
-    padding: 1rem;
-    text-decoration: none;
     color: $dark;
     float: left;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
   }
+
   nav {
     float: right;
     padding-top: 1.5rem;
+
     a {
-      color: $dark;
       text-decoration: none;
+      color: $dark;
       margin: 0 1rem;
       font-size: 1rem;
     }
   }
 }
+
 #page_title {
-  text-align: center;
   border-bottom: 1px solid $border;
-  padding: 2em 0;
   font-size: 1rem;
+  padding: 2em 0;
+  text-align: center;
   text-transform: uppercase;
 
 }
+
 #main_footer {
-  padding: 2.5em 5%;
   border-top: 1px solid $border;
+  padding: 2.5em 5%;
+
   .copyright{
     float: left;
     font-size: .9em;
     margin: 0;
   }
+
   nav {
     float: right;
+
     i {
       color: $dark;
       margin-left: 1em;
       padding-top: .2em;
+      
       &:hover {
         color: $highlight;
       }
@@ -142,30 +167,33 @@ hr {
   }
 }
 
-input[type="text"], input[type="email"], input[type="password"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
 textarea {
-  width: 100%;
-  max-width: 100%;
-  height: 3em;
   border: 2px solid $border;
+  height: 3em;
+  margin: .5em 0 2em;
+  max-width: 100%;
   padding: 1em;
-  margin: .5em 0 2em 0;
+  width: 100%;
 }
 
 textarea {
   min-height: 20em;
 }
 
-input[type="submit"], .button {
-  outline: none;
+input[type="submit"],
+.button {
   background: transparent;
   border: 2px solid $border;
-  text-align: center;
-  font-size: 1em;
   color: $dark;
-  text-decoration: none;
+  font-size: 1em;
+  outline: none;
   padding: 1em 2em;
-  &:hover{
+  text-align: center;
+  text-decoration: none;
+  &:hover {
     border: 2px solid $highlight;
     color: $highlight;
   }
