@@ -5,24 +5,31 @@
 
 #post_wrapper {
   padding: 3em 0;
+
   .post{
     text-align: center;
+
     .date {
       font-size: .9em;
       margin: 0;
+      text-align: center;
     }
+
     h2 {
-      margin: 0;
       font-size: 2em;
+      margin: 0;
       text-transform: uppercase;
+
       a {
-        text-decoration: none;
         color: $dark;
+        text-decoration: none;
+
         &:hover {
           color: $highlight;
         }
       }
     }
+
     hr {
       margin: 3em auto;
     }
@@ -33,45 +40,48 @@
 
 #post_show_content {
   header{
-  text-align: center;
-  .date {
     text-align: center;
-    font-size: .9em;
-    color: $light;
-    margin: 0;
-  }
-  p {
-    // text-align: left;
-  }
-  h1 {
-    margin: 0;
+    .date {
+      font-size: .9em;
+      color: $light;
+      margin: 0;
     }
+    h1 {
+      margin: 0;
+    }
+
     hr {
       margin: 2em auto;
     }
-
   }
 }
 
-#share_box {
+.post-text {
+  text-align: left;
+}
+
+.share-text{
   text-align: center;
-  p {
-    padding: 0 0 1em 0;
+  h5 {
+    padding: 0 0 1em;
     margin: 0;
-    font-weight: 700;
     text-transform: uppercase;
     color: $dark;
     font-size: .8em;
   }
-  i {
-    color: $dark;
-    padding: 1em 1.5em;
-    &:hover {
-      color: $highlight;
-      cursor: pointer;
-    }
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-google-plus {
+  color: $dark;
+  padding: 1em 1.5em;
+  &:hover {
+    color: $highlight;
+    cursor: pointer;
   }
 }
+
 // -----------Pagination--------- \\
 .pagination:before,
 .pagination:after {
@@ -106,11 +116,12 @@
     background: $highlight;
     color: $white;
   }
+
   .disabled{
-    color: #C0C0C0;
+    color: #c0c0c0;
     &:hover {
-      color: #C0C0C0;
       background: $white;
+      color: #c0c0c0;
     }
   }
 }
