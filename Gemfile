@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'font-awesome-sass'
 
 gem 'rails_12factor'
+gem 'pygments.rb'
+gem 'redcarpet'
+
 
 
 # Use ActiveModel has_secure_password
