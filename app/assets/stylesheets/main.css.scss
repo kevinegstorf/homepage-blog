@@ -85,7 +85,7 @@ h6 {
 
 p,
 li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -186,7 +186,13 @@ textarea {
   padding: 1em;
   width: 100%;
 }
-
+// 
+// input:focus{
+//   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+//   padding: 3px 0px 3px 3px;
+//   margin: 5px 1px 3px 0px;
+//   border-color: none;
+// }
 textarea {
   min-height: 20em;
 }
@@ -205,4 +211,8 @@ input[type="submit"],
     border: 2px solid $highlight;
     color: $highlight;
   }
+}
+
+.send-button {
+  text-align: center;
 }
