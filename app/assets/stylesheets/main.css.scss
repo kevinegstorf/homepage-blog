@@ -1,0 +1,218 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//----------- Colors -------------\\
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bd6db;
+$border: #e9e9e9;
+$white: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+//----------- Fonts -------------\\
+$main-font: 'Titillium Web', sans-serif;
+
+
+html,
+body {
+  font-family: $main-font;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wrapper-padding {
+  padding: 4rem 0;
+}
+
+.skinny-wrapper {
+  margin: 0 auto;
+  max-width: 760px;
+  width: 80%;
+}
+
+.clearfix:before,
+.clearfix:after{
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  color: $dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.6em;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid $highlight;
+  display: block;
+  height: 2px;
+  margin: 2rem 0;
+  width: 3em;
+}
+
+#main_navigation {
+  border-bottom: 1px solid $border;
+  padding: 2.5em 5%;
+  .name {
+    border: 2px solid $border;
+    color: $dark;
+    float: left;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      border: 2px solid $highlight;
+      color: $highlight;
+    }
+  }
+
+  nav {
+    float: right;
+    padding-top: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+      margin: 0 1rem;
+      font-size: 2em;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+#page_title {
+  border-bottom: 1px solid $border;
+  font-size: 1rem;
+  padding: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+#main_footer {
+  border-top: 1px solid $border;
+  padding: 2.5em 5%;
+
+  .copyright{
+    float: left;
+    font-size: .9em;
+    margin: 0;
+  }
+
+  nav {
+    float: right;
+
+    i {
+      color: $dark;
+      font-size: 2em;
+      margin-left: 1em;
+      padding-top: .2em;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: 2px solid $border;
+  height: 3em;
+  margin: .5em 0 2em;
+  max-width: 100%;
+  padding: 1em;
+  width: 100%;
+}
+// 
+// input:focus{
+//   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+//   padding: 3px 0px 3px 3px;
+//   margin: 5px 1px 3px 0px;
+//   border-color: none;
+// }
+textarea {
+  min-height: 20em;
+}
+
+input[type="submit"],
+.button {
+  background: transparent;
+  border: 2px solid $border;
+  color: $dark;
+  font-size: 1em;
+  outline: none;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    border: 2px solid $highlight;
+    color: $highlight;
+  }
+}
+
+.send-button {
+  text-align: center;
+}

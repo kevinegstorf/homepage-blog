@@ -1,0 +1,127 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'main';
+
+#post_wrapper {
+  padding: 3em 0;
+
+  .post{
+    text-align: center;
+
+    .date {
+      font-size: .9em;
+      margin: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 0;
+      text-transform: uppercase;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+
+    hr {
+      margin: 3em auto;
+    }
+  }
+}
+
+// ----------- POST SHOW ----------\\
+
+#post_show_content {
+  header{
+    text-align: center;
+    .date {
+      font-size: .9em;
+      color: $light;
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+    }
+
+    hr {
+      margin: 2em auto;
+    }
+  }
+}
+
+.post-text {
+  text-align: left;
+}
+
+.share-text{
+  text-align: center;
+  h5 {
+    padding: 0 0 1em;
+    margin: 0;
+    text-transform: uppercase;
+    color: $dark;
+    font-size: .8em;
+  }
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-google-plus {
+  color: $dark;
+  padding: 1em 1.5em;
+  &:hover {
+    color: $highlight;
+    cursor: pointer;
+  }
+}
+
+// -----------Pagination--------- \\
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: box;
+}
+
+.pagination{
+  text-align: center;
+  margin: 0 0 3em 0;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: bold;
+    font-size: .7em;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
+  }
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+
+  .disabled{
+    color: #c0c0c0;
+    &:hover {
+      background: $white;
+      color: #c0c0c0;
+    }
+  }
+}
