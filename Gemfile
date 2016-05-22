@@ -23,11 +23,7 @@ gem 'font-awesome-sass'
 gem 'rails_12factor'
 gem 'pygments.rb'
 gem 'redcarpet'
-
 gem 'friendly_id'
-
-
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -37,6 +33,8 @@ gem 'friendly_id'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
