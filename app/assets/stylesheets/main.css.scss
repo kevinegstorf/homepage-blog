@@ -1,7 +1,6 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 //----------- Colors -------------\\
 $dark: #424652;
 $light: #9a9da4;
@@ -111,6 +110,7 @@ hr {
     border: 2px solid $border;
     color: $dark;
     float: left;
+    // font-family: 'Baron Neue';
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 4px;
@@ -186,7 +186,7 @@ textarea {
   padding: 1em;
   width: 100%;
 }
-// 
+//
 // input:focus{
 //   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 //   padding: 3px 0px 3px 3px;
@@ -213,6 +213,22 @@ input[type="submit"],
   }
 }
 
+.project_button {
+  background: $highlight;
+  padding: 1em 2em;
+  text-decoration: none;
+  // color: purple;
+  border: 5px;
+  color: $white;
+}
+
+.button_wrapper {
+  margin: 4em 0 0;
+  text-align: center;
+
+}
+
 .send-button {
+
   text-align: center;
 }
