@@ -10,6 +10,13 @@
            <!-- </div> -->
     </div>
 
+    <% if user_signed_in? %>
+    <div class="admin_links">
+      <%= link_to "Edit Article", edit_post_path(@post) %>
+      <%= link_to "Delete Article", post_path(@post), method: :delete, data: { confirm: 'Are you sure?'} %>
+    </div>
+    <% end %>
+
     <div class="share-box">
       <h5>Share <%= @post.title %></p>
         <div class="share-icons">
@@ -23,11 +30,7 @@
         <br>
         <br>
       </div>
-      <div class="button">
-        <%= link_to "Edit", edit_post_path(@post) %>
-      </div>
-      <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are your
-        sure you want to delete this post?'} %>
+
   </div>
     <hr>
   <%= render 'disqus' %>
