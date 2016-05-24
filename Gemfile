@@ -25,6 +25,7 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'friendly_id'
 gem 'mail_form'
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
