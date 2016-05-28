@@ -13,3 +13,5 @@ before_install:
   - gem install rails
 before_script:
   - psql -c 'create database homepage_blog_test' -U postgres
+notifications:
+  slack: railsdevkev:2Hc03EHDhMxN6F9bDx4pm3dJ
